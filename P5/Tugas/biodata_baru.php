@@ -1,12 +1,14 @@
 <?php require_once 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Biodata - Refactored</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="card">
         <div class="card-header">
@@ -16,7 +18,7 @@
         <form method="POST" action="hasil_baru.php" class="card-body">
             <div class="form-group">
                 <label>Nama Lengkap</label>
-                <input type="text" name="nama" required placeholder="Nama lengkap sesuai KTP">
+                <input type="text" name="nama" required placeholder="Nama lengkap">
             </div>
 
             <div class="form-group">
@@ -35,7 +37,7 @@
             <div class="form-group">
                 <label>Hobi</label>
                 <div class="options grid">
-                    <?php foreach($list_hobby as $h): ?>
+                    <?php foreach ($list_hobby as $h): ?>
                         <label><input type="checkbox" name="hobby[]" value="<?= $h ?>"> <?= $h ?></label>
                     <?php endforeach; ?>
                 </div>
@@ -45,7 +47,7 @@
                 <label>Pendidikan Terakhir</label>
                 <select name="pendidikan" required>
                     <option value="">-- Pilih Pendidikan --</option>
-                    <?php foreach($list_pendidikan as $p): ?>
+                    <?php foreach ($list_pendidikan as $p): ?>
                         <option value="<?= $p ?>"><?= $p ?></option>
                     <?php endforeach; ?>
                 </select>
@@ -60,4 +62,5 @@
         </form>
     </div>
 </body>
+
 </html>
