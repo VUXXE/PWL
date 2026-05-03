@@ -10,18 +10,19 @@ Repositori ini didedikasikan untuk mendokumentasikan perjalanan belajar dalam ma
 
 ## 📂 Struktur Proyek
 
-Navigasi cepat ke materi praktikum:
+Berikut adalah ringkasan materi berdasarkan kode praktikum yang tersedia:
 
-- **[P2](./P2/)** - Dasar-dasar PHP & Pengenalan Sintaks.
-- **[P3](./P3/)** - Struktur Kontrol, Array, dan Fungsi.
-  - _Highlights:_ Latihan perhitungan, manipulasi array, dan Tugas P3.
-- **[p4](./p4/)** - Penanganan Form & Superglobals.
-- **[P5](./P5/)** - Integrasi Database & Aplikasi CRUD Sederhana.
-  - _Project:_ [Biodata App](./P5/Tugas/) - Aplikasi input data diri dengan styling CSS.
-- **[P6](./P6/)** - Penanganan Request POST & Proses Form Lanjutan.
-  - _Project:_ [Biodata Dinamis](./P6/Tugas/) - Form input biodata dan pemrosesan data (POST) dengan styling CSS.
+- **[P2](./P2/)** - Persiapan dan Pengenalan Dasar PHP.
+- **[P3](./P3/)** - Dasar PHP & Operator.
+  - _Highlights:_ Penerapan operator (Aritmatika, Logika, Perbandingan, Bitwise) dan Pengenalan Form Sederhana.
+- **[P4](./P4/)** - Struktur Kontrol & Perulangan.
+  - _Highlights:_ Percabangan (`if-else`, `switch-case`), Perulangan (`for`), dan studi kasus Program Penilaian Mahasiswa.
+- **[P5](./P5/)** - Pengenalan Superglobal `$_GET`.
+  - _Highlights:_ Pemrosesan form URL parameter menggunakan method GET.
+- **[P6](./P6/)** - Penanganan Form Request POST Lanjutan.
+  - _Project:_ [Biodata Dinamis](./P6/Tugas/) - Form input dengan sanitasi `htmlspecialchars`, serta simulasi login & tiket bioskop dengan styling CSS.
 - **[P7](./P7/)** - Pemrograman Modular & Fungsi.
-  - _Highlights:_ Penerapan fungsi dengan parameter dan return value pada studi kasus (Perhitungan Determinan Matriks & KHS).
+  - _Highlights:_ Penerapan fungsi (Parameter & Return Value) pada studi kasus nyata seperti Perhitungan Determinan Matriks & KHS.
 
 ---
 
