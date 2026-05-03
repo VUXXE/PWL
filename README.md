@@ -12,24 +12,28 @@ Repositori ini didedikasikan untuk mendokumentasikan perjalanan belajar dalam ma
 
 Navigasi cepat ke materi praktikum:
 
-*   **[P2](./P2/)** - Dasar-dasar PHP & Pengenalan Sintaks.
-*   **[P3](./P3/)** - Struktur Kontrol, Array, dan Fungsi.
-    *   *Highlights:* Latihan perhitungan, manipulasi array, dan Tugas P3.
-*   **[p4](./p4/)** - Penanganan Form & Superglobals.
-*   **[P5](./P5/)** - Integrasi Database & Aplikasi CRUD Sederhana.
-    *   *Project:* [Biodata App](./P5/Tugas/) - Aplikasi input data diri dengan styling CSS.
+- **[P2](./P2/)** - Dasar-dasar PHP & Pengenalan Sintaks.
+- **[P3](./P3/)** - Struktur Kontrol, Array, dan Fungsi.
+  - _Highlights:_ Latihan perhitungan, manipulasi array, dan Tugas P3.
+- **[p4](./p4/)** - Penanganan Form & Superglobals.
+- **[P5](./P5/)** - Integrasi Database & Aplikasi CRUD Sederhana.
+  - _Project:_ [Biodata App](./P5/Tugas/) - Aplikasi input data diri dengan styling CSS.
+- **[P6](./P6/)** - Penanganan Request POST & Proses Form Lanjutan.
+  - _Project:_ [Biodata Dinamis](./P6/Tugas/) - Form input biodata dan pemrosesan data (POST) dengan styling CSS.
+- **[P7](./P7/)** - Pemrograman Modular & Fungsi.
+  - _Highlights:_ Penerapan fungsi dengan parameter dan return value pada studi kasus (Perhitungan Determinan Matriks & KHS).
 
 ---
 
 ## 🛠️ Stack Teknologi
 
-| Komponen | Teknologi |
-| :--- | :--- |
-| **Backend** | PHP 8.x |
-| **Database** | MySQL / MariaDB |
-| **Server** | Apache (XAMPP / Laragon) |
+| Komponen     | Teknologi                               |
+| :----------- | :-------------------------------------- |
+| **Backend**  | PHP 8.x                                 |
+| **Database** | MySQL / MariaDB                         |
+| **Server**   | Apache (XAMPP / Laragon)                |
 | **Frontend** | HTML5, CSS3 (Custom Styles), JavaScript |
-| **Tools** | VS Code, PHPMyAdmin |
+| **Tools**    | VS Code, PHPMyAdmin                     |
 
 ---
 
@@ -52,7 +56,7 @@ Navigasi cepat ke materi praktikum:
 ---
 
 ## 📝 Catatan Tambahan
+
 Setiap folder `P[n]` merepresentasikan urutan pertemuan praktikum. Pastikan untuk memeriksa file `config.php` di dalam folder tugas jika ada konfigurasi database yang perlu disesuaikan.
 
 ---
-*Dibuat dengan ❤️ untuk pembelajaran Pemrograman Web.*
