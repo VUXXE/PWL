@@ -1,41 +1,61 @@
-<?php
-$output = [];
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $nama   = htmlspecialchars(trim($_POST['nama'] ?? ''));
-    $aksi   = $_POST['aksi'] ?? '';
-    $jumlah = (int)($_POST['jumlah'] ?? 0);
-
-    if ($nama !== '' && in_array($aksi, ['Melangkah', 'Melompat']) && $jumlah > 0) {
-        for ($i = 1; $i <= $jumlah; $i++) {
-            $output[] = "$nama $aksi $i kali";
-        }
-        $output[] = "$nama berhenti $aksi";
-    }
-}
-?>
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Form Aksi</title>
+    <title>Kuis Form - Two Containers</title>
 </head>
 <body>
 
-<form method="POST">
-    Nama :  <input type="text" name="nama" value="<?= isset($_POST['nama']) ? htmlspecialchars($_POST['nama']) : '' ?>"><br>
-    Aksi :  <input type="radio" name="aksi" value="Melangkah" <?= (($_POST['aksi'] ?? '') === 'Melangkah') ? 'checked' : '' ?>> Melangkah
-            <input type="radio" name="aksi" value="Melompat" <?= (($_POST['aksi'] ?? 'Melompat') === 'Melompat') ? 'checked' : '' ?>> Melompat<br>
-    Jumlah : <input type="text" name="jumlah" value="<?= isset($_POST['jumlah']) ? (int)$_POST['jumlah'] : '' ?>"><br>
-    <input type="submit" value="Go">
-</form> 
+<?php
+    // Ambil data dari POST
+    $nama = isset($_POST['nama']) ? $_POST['nama'] : '';
+    $aksi = isset($_POST['aksi']) ? $_POST['aksi'] : '';
+    $jumlah = isset($_POST['jumlah']) ? $_POST['jumlah'] : '';
+    $submitted = isset($_POST['submit']);
+?>
 
-<?php if (!empty($output)): ?>
-    <br>
-    <?php foreach ($output as $line): ?>
-        <?= $line ?><br>
-    <?php endforeach; ?>
-<?php endif; ?>
+<div style="border: 1px solid black; display: flex; width: 1000px; min-height: 500px;">
+    
+    <!-- Container Kiri: State Sebelum Submit -->
+    <div style="flex: 1; border-right: 1px solid black; padding: 10px;">
+        <form method="POST">
+            Nama : <input type="text" name="nama"><br>
+            Aksi : 
+            <input type="radio" name="aksi" value="Melangkah"> Melangkah
+            <input type="radio" name="aksi" value="Melompat"> Melompat<br>
+            Jumlah : <input type="text" name="jumlah"><br>
+            <input type="submit" name="submit" value="Go">
+        </form>
+    </div>
+
+    <!-- Container Kanan: State Setelah Submit (Menampilkan Hasil) -->
+    <div style="flex: 1; padding: 10px;">
+        <?php if ($submitted): ?>
+            <!-- Menampilkan kembali form dengan data yang diisi -->
+            Nama : <input type="text" value="<?php echo htmlspecialchars($nama); ?>" readonly><br>
+            Aksi : 
+            <input type="radio" <?php echo ($aksi == 'Melangkah') ? 'checked' : ''; ?> disabled> Melangkah
+            <input type="radio" <?php echo ($aksi == 'Melompat') ? 'checked' : ''; ?> disabled> Melompat<br>
+            Jumlah : <input type="text" value="<?php echo htmlspecialchars($jumlah); ?>" readonly><br>
+            <input type="button" value="Go" disabled>
+            
+            <div style="margin-top: 20px;">
+                <?php
+                $nama_val = htmlspecialchars($nama);
+                $aksi_val = htmlspecialchars($aksi);
+                $jumlah_val = intval($jumlah);
+
+                if ($nama_val && $aksi_val && $jumlah_val > 0) {
+                    for ($i = 1; $i <= $jumlah_val; $i++) {
+                        echo "$nama_val $aksi_val $i kali<br>";
+                    }
+                    echo "$nama_val berhenti $aksi_val<br>";
+                }
+                ?>
+            </div>
+        <?php endif; ?>
+    </div>
+
+</div>
 
 </body>
 </html>

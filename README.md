@@ -23,6 +23,7 @@ Berikut adalah ringkasan materi berdasarkan kode praktikum yang tersedia:
   - _Project:_ [Biodata Dinamis](./P6/Tugas/) - Form input dengan sanitasi `htmlspecialchars`, serta simulasi login & tiket bioskop dengan styling CSS.
 - **[P7](./P7/)** - Pemrograman Modular & Fungsi.
   - _Highlights:_ Penerapan fungsi (Parameter & Return Value) pada studi kasus nyata seperti Perhitungan Determinan Matriks & KHS.
+  - _Kuis:_ [Form Gerakan (Upin)](./P7/KUIS/KuisForm.php) - Implementasi perulangan `for` pada pengolahan form POST dengan layout 2-container.
 
 ---
 
