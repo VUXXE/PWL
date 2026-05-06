@@ -40,9 +40,7 @@
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 6px;
-            box-sizing: border-box; /* Agar padding tidak merusak lebar */
-        }
-        button {
+            box-sizing: border-box;         button {
             width: 100%;
             padding: 12px;
             background-color: #007bff;
