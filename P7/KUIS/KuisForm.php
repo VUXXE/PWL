@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Kuis Form - Two Containers</title>
+    <title>Kuis Form Post/title>
 </head>
 
 <body>
