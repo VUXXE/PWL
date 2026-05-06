@@ -25,6 +25,56 @@ Berikut adalah ringkasan materi berdasarkan kode praktikum yang tersedia:
   - _Highlights:_ Penerapan fungsi (Parameter & Return Value) pada studi kasus nyata seperti Perhitungan Determinan Matriks & KHS.
   - _Kuis:_ [Form Gerakan (Upin)](./P7/KUIS/KuisForm.php) - Implementasi perulangan `for` pada pengolahan form POST dengan layout 2-container.
 
+### 🌲 Pohon Direktori
+
+```text
+PWL/
+├── P2/
+├── P3/
+│   ├── latihan2.php
+│   ├── P3-1.php
+│   ├── P3-2.php
+│   ├── P3-3.php
+│   ├── P3-4.php
+│   ├── P3-5.php
+│   ├── P3-Latihan1.php
+│   └── P3-Tugas.php
+├── P4/
+│   ├── P4-2.php
+│   └── P4.php
+├── P5/
+│   └── P5-1.php
+├── P6/
+│   ├── latform1.php
+│   ├── latform2.php
+│   ├── LatihanPOST.php
+│   ├── proses_login.php
+│   ├── proses_tiket.php
+│   └── Tugas/
+│       ├── biodata_baru.php
+│       ├── biodata.php
+│       ├── config.php
+│       ├── hasil_baru.php
+│       ├── hasil.php
+│       └── style.css
+├── P7/
+│   ├── Function1Parameter.php
+│   ├── FunctionDasar.php
+│   ├── FunctionMultiParameter.php
+│   ├── FunctionReturnValue.php
+│   ├── KUIS/
+│   │   ├── kalkulator_tabung.php
+│   │   ├── KuisForm.php
+│   │   ├── Kuis.php
+│   │   └── Operator.php
+│   └── TUGAS/
+│       ├── DeterminanCurve.php
+│       ├── Determinan.php
+│       ├── function.php
+│       └── KHS.php
+└── README.md
+```
+
 ---
 
 ## 🛠️ Stack Teknologi
